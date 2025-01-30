@@ -6,7 +6,8 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-        
+    <a-marker type="pattern" url="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/marker.patt?v=1679535833818">
+            
   <!-- Business Card -->
   <a-plane position="0 1 -3" width="2.5" height="1.5" color="white" material="side:double">
     <a-text value="John Doe\nSolutions Architect\n53 Consulting INC." 
@@ -31,6 +32,7 @@
 
   <!-- Auto Looping Video -->
   <a-video src="assets/video.mp4" position="1.5 1 -3" width="1.5" height="0.9" autoplay loop muted playsinline></a-video>
+       </a-marker>
   <a-entity camera cursor="fuse: false; rayOrigin: mouse"></a-entity>
 </a-scene>
 
