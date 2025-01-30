@@ -3,15 +3,6 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
-    <script>
-  document.addEventListener("contextmenu", event => event.preventDefault());
-  document.addEventListener("keydown", function(event) {
-    if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i")) {
-      event.preventDefault();
-    }
-  });
-</script>
-
   </head>
   <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
