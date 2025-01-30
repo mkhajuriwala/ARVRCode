@@ -17,13 +17,10 @@
      <a-scene embedded arjs="patternRatio:0.80" vr-mode-ui="enabled: false">
          
   <!-- Business Card -->
-  <a-image id="ar-image1" 
-                 width="4" height="2" 
-                 position="0.3 0 -1.2" 
-                 rotation="-90 0 0" 
-                 src="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/ar-image1.png?v=1679629724323">
-        </a-image>
-
+  <a-plane position="0 1 -3" width="2.5" height="1.5" color="white" material="side:double">
+    <a-text value="John Doe\nSolutions Architect\n53 Consulting INC." 
+            position="-1.1 0.4 0.1" align="left" width="1.8" color="black"></a-text>
+  </a-plane>
   <!-- Profile Picture -->
   <a-circle position="-1.7 1.2 -3" radius="0.4" material="src: assets/profile.jpg"></a-circle>
 
@@ -33,13 +30,6 @@
                  event-set__click="window.open('https://instagram.com/yourprofile', '_blank')">
         </a-image>
 
-    <a-image id="ar-image2" 
-                 width="4" height="2" 
-                 position="1 0 2.5" 
-                 rotation="-90 0 0" 
-                 src="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/ar-image2.png?v=1679629725151" 
-                 link="href: https://noelrecords-apps.web.app/links.html">
-        </a-image>
   <!-- LinkedIn Icon -->
   <a-image id="linkedin"  src="assets/linkedin.png" position="-0.4 -1 -2" width="0.5" height="0.5" 
                  rotation="-90 0 0"
